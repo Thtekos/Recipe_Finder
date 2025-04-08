@@ -66,5 +66,6 @@ The app supports dynamic language switching from English to Greek.
 
 Panagiotis Stekos
 📧 p.Stekos@acg.edu / panagiotisstek@gmail.com
+
 🧑‍💻 LinkedIn - www.linkedin.com/in/panagiotis-stekos
 
