@@ -1,6 +1,6 @@
-🍝 RecipeFinder App
+🍝 Recipe Finder App
 
-RecipeFinder is a simple Android application that allows users to explore and view detailed information about various recipes. It supports multiple languages and includes the ability to share recipes with others. This was made as my final project for the ITC 3125 - Mobile Applications Development.
+Recipe Finder is a simple Android application that allows users to explore and view detailed information about various recipes. It supports multiple languages and includes the ability to share recipes with others. This was made as my final project for the ITC 3125 - Mobile Applications Development.
 
 ---
 
