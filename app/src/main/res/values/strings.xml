@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Recipe Finder</string>
+    <string name="recipe_details">Recipe Details</string>
+    <string name="share_recipe">Share Recipe</string>
+    <string name="flag_uk_description">English flag</string>
+    <string name="flag_greece_description">Greek flag</string>
+    <string name="pasta">Pasta</string>
+    <string name="delicious_italian_dish">Delicious Italian dish</string>
+    <string name="ingredients_flour_water_salt">Ingredients: Flour, Water, Salt</string>
+    <string name="instructions_mix_ingredients_and_bake">Instructions: Mix ingredients and bake.</string>
+    <string name="pizza">Pizza</string>
+    <string name="classic_italian_pizza">Classic Italian pizza</string>
+    <string name="salad">Salad</string>
+    <string name="healthy_and_refreshing">Healthy and refreshing</string>
+    <string name="ingredients_lettuce_tomatoes_cucumber">Ingredients: Lettuce, Tomatoes, Cucumber</string>
+    <string name="instructions_mix_ingredients_and_serve">Instructions: Mix ingredients and serve.</string>
+    <string name="soup">Soup</string>
+    <string name="warm_and_comforting">Warm and comforting</string>
+    <string name="ingredients_carrots_potatoes_onions">Ingredients: Carrots, Potatoes, Onions</string>
+    <string name="instructions_boil_ingredients_and_blend">Instructions: Boil ingredients and blend.</string>
+</resources>

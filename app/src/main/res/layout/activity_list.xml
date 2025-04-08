@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingTop="24dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:padding="16dp">
+
+        <ImageView
+            android:id="@+id/english_flag"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/flag_uk"
+            android:contentDescription="@string/flag_uk_description"
+            android:clickable="true" />
+
+        <ImageView
+            android:id="@+id/greek_flag"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/flag_greece"
+            android:layout_marginStart="16dp"
+            android:contentDescription="@string/flag_greece_description"
+            android:clickable="true" />
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="80dp"
+        android:clipToPadding="false"
+        android:layout_marginBottom="0dp"
+        />
+
+</LinearLayout>
