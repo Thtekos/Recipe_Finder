@@ -1,6 +1,6 @@
 🍝 RecipeFinder App
 
-RecipeFinder is a simple Android application that allows users to explore and view detailed information about various recipes. It supports multiple languages and includes the ability to share recipes with others.
+RecipeFinder is a simple Android application that allows users to explore and view detailed information about various recipes. It supports multiple languages and includes the ability to share recipes with others. This was made as my final project for the ITC 3125 - Mobile Applications Development.
 
 ---
 
@@ -50,6 +50,13 @@ The app supports dynamic language switching from English to Greek.
    
 2. Open the project in Android Studio.
 3. Click Run ▶️ to install and launch the app on an emulator or physical device.
+
+**OR**
+
+1. Request the ZIP file
+2. Extract it
+3. Open the extracted folder in Android Studio
+4. Click Run ▶️ to install and launch the app on an emulator or physical device.
 
 ---
 
