@@ -32,8 +32,6 @@ Recipe Finder is a simple Android application that allows users to explore and v
 
 <img width="404" alt="Screenshot 2025-04-08 at 12 24 12" src="https://github.com/user-attachments/assets/b5ee0741-769d-495c-a73d-317d6759d8fd" />
 
-(Add screenshots here if you'd like)
-
 ---
 
 🌐 Localization
