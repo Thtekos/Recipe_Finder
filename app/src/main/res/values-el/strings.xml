@@ -1,22 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Ευρετήριο Συνταγών</string>
+    <string name="app_name">Εύρεση Συνταγών</string>
     <string name="recipe_details">Λεπτομέρειες Συνταγής</string>
-    <string name="share_recipe">Μοιράσου τη Συνταγή</string>
-    <string name="flag_uk_description">Αγγλική Σημαία</string>
-    <string name="flag_greece_description">Greek flag</string>
+    <string name="share_recipe">Κοινοποίηση Συνταγής</string>
+    <string name="flag_uk_description">Αγγλική σημαία</string>
+    <string name="flag_greece_description">Ελληνική σημαία</string>
     <string name="pasta">Μακαρόνια</string>
-    <string name="delicious_italian_dish">Πεντανόστιμο Ιταλικό Πιάτο</string>
-    <string name="ingredients_flour_water_salt">Υλικά: Αλεύρι, Νερό, Αλάτι</string>
-    <string name="instructions_mix_ingredients_and_bake">Οδηγίες: Ανακατέψτε τα υλικά και ψήστε.</string>
+    <string name="delicious_italian_dish">Νόστιμο ιταλικό πιάτο</string>
+    <string name="ingredients_flour_water_salt">Συστατικά: Αλεύρι, Νερό, Αλάτι</string>
+    <string name="instructions_mix_ingredients_and_bake">Οδηγίες: Ανακατέψτε τα συστατικά και ψήστε.</string>
     <string name="pizza">Πίτσα</string>
-    <string name="classic_italian_pizza">Κλασσική Ιταλική Πίτσα</string>
+    <string name="classic_italian_pizza">Κλασική ιταλική πίτσα</string>
     <string name="salad">Σαλάτα</string>
-    <string name="healthy_and_refreshing">Υγιεινή και Αναζωογονητική</string>
-    <string name="ingredients_lettuce_tomatoes_cucumber">Υλικά: Μαρούλι, Ντομάτες, Αγγούρι</string>
-    <string name="instructions_mix_ingredients_and_serve">Οδηγίες: Ανακατέψτε τα υλικά και σερβίρετε.</string>
+    <string name="healthy_and_refreshing">Υγιεινή και δροσερή</string>
+    <string name="ingredients_lettuce_tomatoes_cucumber">Συστατικά: Μαρούλι, Ντομάτες, Αγγούρι</string>
+    <string name="instructions_mix_ingredients_and_serve">Οδηγίες: Ανακατέψτε τα συστατικά και σερβίρετε.</string>
     <string name="soup">Σούπα</string>
-    <string name="warm_and_comforting">Ζεστή και Παρηγορητική</string>
-    <string name="ingredients_carrots_potatoes_onions">Υλικά: Καρότα, Πατάτες, Κρεμμύδια</string>
-    <string name="instructions_boil_ingredients_and_blend">Οδηγίες: Βράστε τα υλικά και ανακατέψτε.</string>
-    <string name="toggle_dark_mode">Ενεργοποιήστε τη Σκοτεινή Λειτουργία</string>
+    <string name="warm_and_comforting">Ζεστή και παρήγορη</string>
+    <string name="ingredients_carrots_potatoes_onions">Συστατικά: Καρότα, Πατάτες, Κρεμμύδια</string>
+    <string name="instructions_boil_ingredients_and_blend">Οδηγίες: Βράστε τα συστατικά και ανακατέψτε.</string>
+    <string name="toggle_dark_mode">Εναλλαγή Σκοτεινής Λειτουργίας</string>
+    <string name="dark_mode_toggle_description">Εναλλαγή σκοτεινής λειτουργίας</string>
 </resources>
