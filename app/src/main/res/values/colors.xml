@@ -4,4 +4,18 @@
     <color name="white">#FFFFFFFF</color>
     <color name="primary_color">#2F8AE5</color>
     <color name="splash_background">#1A6CA8</color>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryVariant">#3700B3</color>
+    <color name="colorOnPrimary">#FFFFFF</color>
+    <color name="colorSecondary">#03DAC6</color>
+    <color name="colorSecondaryVariant">#018786</color>
+    <color name="colorOnSecondary">#000000</color>
+
+    <!-- Dark theme colors -->
+    <color name="colorPrimaryDark">#BB86FC</color>
+    <color name="colorPrimaryVariantDark">#3700B3</color>
+    <color name="colorOnPrimaryDark">#000000</color>
+    <color name="colorSecondaryDark">#03DAC6</color>
+    <color name="colorSecondaryVariantDark">#03DAC6</color>
+    <color name="colorOnSecondaryDark">#000000</color>
 </resources>

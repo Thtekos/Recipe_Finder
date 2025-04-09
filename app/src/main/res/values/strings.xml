@@ -18,4 +18,5 @@
     <string name="warm_and_comforting">Warm and comforting</string>
     <string name="ingredients_carrots_potatoes_onions">Ingredients: Carrots, Potatoes, Onions</string>
     <string name="instructions_boil_ingredients_and_blend">Instructions: Boil ingredients and blend.</string>
+    <string name="toggle_dark_mode">Toggle Dark Mode</string>
 </resources>

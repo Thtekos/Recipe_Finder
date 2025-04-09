@@ -18,4 +18,5 @@
     <string name="warm_and_comforting">Ζεστή και Παρηγορητική</string>
     <string name="ingredients_carrots_potatoes_onions">Υλικά: Καρότα, Πατάτες, Κρεμμύδια</string>
     <string name="instructions_boil_ingredients_and_blend">Οδηγίες: Βράστε τα υλικά και ανακατέψτε.</string>
+    <string name="toggle_dark_mode">Ενεργοποιήστε τη Σκοτεινή Λειτουργία</string>
 </resources>
