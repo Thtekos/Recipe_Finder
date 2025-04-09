@@ -4,8 +4,12 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.res.Configuration;
 import android.os.Bundle;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
+import android.view.View;
 import android.widget.ImageView;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatDelegate;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 import java.util.ArrayList;
@@ -54,9 +58,11 @@ public class ListActivity extends AppCompatActivity {
 
         ImageView englishFlag = findViewById(R.id.english_flag);
         ImageView greekFlag = findViewById(R.id.greek_flag);
+        ImageView darkModeToggle = findViewById(R.id.dark_mode_toggle);
 
         englishFlag.setOnClickListener(v -> changeLanguage("en"));
         greekFlag.setOnClickListener(v -> changeLanguage("el"));
+        darkModeToggle.setOnClickListener(v -> toggleDarkMode());
     }
 
     private String getSavedLanguage() {
@@ -74,5 +80,40 @@ public class ListActivity extends AppCompatActivity {
         Intent intent = getIntent();
         finish();
         startActivity(intent);
+    }
+
+    private void toggleDarkMode() {
+        ImageView darkModeToggle = findViewById(R.id.dark_mode_toggle);
+        Animation rotateAnimation = AnimationUtils.loadAnimation(this, R.anim.rotate);
+        darkModeToggle.startAnimation(rotateAnimation);
+
+        // Get current theme mode
+        int currentNightMode = getResources().getConfiguration().uiMode & Configuration.UI_MODE_NIGHT_MASK;
+        boolean isDarkMode = currentNightMode == Configuration.UI_MODE_NIGHT_YES;
+
+        // Get the root view for animation
+        final View rootView = getWindow().getDecorView();
+        Animation fadeOut = AnimationUtils.loadAnimation(this, R.anim.fade_out);
+        
+        // Change theme immediately but let the animation smooth out the transition
+        AppCompatDelegate.setDefaultNightMode(
+            isDarkMode ? AppCompatDelegate.MODE_NIGHT_NO : AppCompatDelegate.MODE_NIGHT_YES
+        );
+
+        fadeOut.setAnimationListener(new Animation.AnimationListener() {
+            @Override
+            public void onAnimationStart(Animation animation) {}
+
+            @Override
+            public void onAnimationEnd(Animation animation) {
+                // No need to recreate here as setDefaultNightMode will trigger recreation
+            }
+
+            @Override
+            public void onAnimationRepeat(Animation animation) {}
+        });
+
+        // Start the fade out animation
+        rootView.startAnimation(fadeOut);
     }
 }

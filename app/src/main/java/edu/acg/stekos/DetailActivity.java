@@ -4,12 +4,16 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.res.Configuration;
 import android.os.Bundle;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.view.View;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
+import androidx.appcompat.app.AppCompatDelegate;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -17,6 +21,8 @@ import java.util.Locale;
 
 public class DetailActivity extends AppCompatActivity {
     private List<Recipe> recipeList;
+    private Toolbar toolbar;
+    private ImageView darkModeToggle;
 
     @Override
     protected void attachBaseContext(android.content.Context newBase) {
@@ -36,10 +42,30 @@ public class DetailActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_detail);
 
-        Toolbar toolbar = findViewById(R.id.toolbar);
+        toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setDisplayShowHomeEnabled(true);
+
+        // Add dark mode toggle to toolbar
+        darkModeToggle = new ImageView(this);
+        darkModeToggle.setImageResource(R.drawable.ic_dark_mode);
+        darkModeToggle.setContentDescription(getString(R.string.dark_mode_toggle_description));
+        
+        // Set proper layout parameters for the dark mode toggle
+        Toolbar.LayoutParams layoutParams = new Toolbar.LayoutParams(
+            Toolbar.LayoutParams.WRAP_CONTENT,
+            Toolbar.LayoutParams.WRAP_CONTENT
+        );
+        layoutParams.width = (int) (48 * getResources().getDisplayMetrics().density);
+        layoutParams.height = (int) (48 * getResources().getDisplayMetrics().density);
+        layoutParams.gravity = android.view.Gravity.END;
+        layoutParams.rightMargin = (int) (16 * getResources().getDisplayMetrics().density);
+        darkModeToggle.setLayoutParams(layoutParams);
+        
+        darkModeToggle.setClickable(true);
+        darkModeToggle.setOnClickListener(v -> toggleDarkMode());
+        toolbar.addView(darkModeToggle);
 
         // Initialize the list of recipes
         recipeList = new ArrayList<>();
@@ -112,6 +138,56 @@ public class DetailActivity extends AppCompatActivity {
             }
         }
         return null; // Return null if no recipe is found with the given ID
+    }
+
+    private void toggleDarkMode() {
+        Animation rotateAnimation = AnimationUtils.loadAnimation(this, R.anim.rotate);
+        darkModeToggle.startAnimation(rotateAnimation);
+
+        // Get current theme mode
+        int currentNightMode = getResources().getConfiguration().uiMode & Configuration.UI_MODE_NIGHT_MASK;
+        boolean isDarkMode = currentNightMode == Configuration.UI_MODE_NIGHT_YES;
+
+        // Get the root view for animation
+        final View rootView = getWindow().getDecorView();
+        Animation fadeOut = AnimationUtils.loadAnimation(this, R.anim.fade_out);
+        
+        // Change theme immediately but let the animation smooth out the transition
+        AppCompatDelegate.setDefaultNightMode(
+            isDarkMode ? AppCompatDelegate.MODE_NIGHT_NO : AppCompatDelegate.MODE_NIGHT_YES
+        );
+
+        fadeOut.setAnimationListener(new Animation.AnimationListener() {
+            @Override
+            public void onAnimationStart(Animation animation) {}
+
+            @Override
+            public void onAnimationEnd(Animation animation) {
+                // No need to recreate here as setDefaultNightMode will trigger recreation
+            }
+
+            @Override
+            public void onAnimationRepeat(Animation animation) {}
+        });
+
+        // Start the fade out animation
+        rootView.startAnimation(fadeOut);
+    }
+
+    private void shareRecipe() {
+        Recipe selectedRecipe = findRecipeById(getIntent().getIntExtra("RECIPE_ID", -1));
+        if (selectedRecipe != null) {
+            String shareText = String.format("%s\n\n%s\n\n%s\n\n%s",
+                    selectedRecipe.getTitle(),
+                    selectedRecipe.getDescription(),
+                    selectedRecipe.getIngredients(),
+                    selectedRecipe.getInstructions());
+
+            Intent shareIntent = new Intent(Intent.ACTION_SEND);
+            shareIntent.setType("text/plain");
+            shareIntent.putExtra(Intent.EXTRA_TEXT, shareText);
+            startActivity(Intent.createChooser(shareIntent, getString(R.string.share_recipe)));
+        }
     }
 
     @Override
