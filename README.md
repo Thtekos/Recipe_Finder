@@ -60,8 +60,6 @@ The app supports dynamic language switching from English to Greek.
 
 🧪 Future Improvements
 
-* Themes
-* Share Button Translation
 * Add Stored User Preference
 * Documentation for Play Store
 
