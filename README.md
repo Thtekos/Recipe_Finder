@@ -30,16 +30,17 @@ Recipe Finder is a simple Android application that allows users to explore and v
 
 🖼️ Screenshots
 
-<img width="405" alt="Screenshot 2025-04-12 at 10 27 37" src="https://github.com/user-attachments/assets/36b876b0-df6b-4df4-ba15-e74c2b40f3b8" />
-<img width="405" alt="Screenshot 2025-04-12 at 10 26 56" src="https://github.com/user-attachments/assets/f1370c23-379e-46f3-b314-97d07b608412" />
-<img width="405" alt="Screenshot 2025-04-12 at 10 26 52" src="https://github.com/user-attachments/assets/3e0e7dc5-4e79-4100-ad05-a9338f0b7156" />
-<img width="405" alt="Screenshot 2025-04-12 at 10 26 49" src="https://github.com/user-attachments/assets/94ea89f0-109d-4109-9933-7b6e9e0a2e3a" />
-<img width="405" alt="Screenshot 2025-04-12 at 10 27 04" src="https://github.com/user-attachments/assets/f637c76c-b6bb-4a11-851e-4fbe9a53e16d" />
-<img width="405" alt="Screenshot 2025-04-12 at 10 27 01" src="https://github.com/user-attachments/assets/5c1f579f-aedc-4be1-ab30-4ebdc5d75a91" />
-
-
-
-
+<img width="405" alt="Screenshot 2025-04-12 at 10 26 49" src="https://github.com/user-attachments/assets/272634b5-1dbf-4d90-8afd-8793f144a143" />
+<img width="405" alt="Screenshot 2025-04-12 at 10 26 52" src="https://github.com/user-attachments/assets/d0638728-582b-4fdf-bf77-8aa96ab59821" />
+<img width="405" alt="Screenshot 2025-04-12 at 10 27 37" src="https://github.com/user-attachments/assets/79ab1878-bc71-4746-9906-7ce84a4b5b24" />
+<img width="405" alt="Screenshot 2025-04-12 at 10 26 56" src="https://github.com/user-attachments/assets/0be2d998-61f4-4c04-bc5b-139e9ddda965" />
+<img width="405" alt="Screenshot 2025-04-12 at 10 27 01" src="https://github.com/user-attachments/assets/68126dc7-f1fc-4f2f-b8bc-273ea2509bd1" />
+<img width="405" alt="Screenshot 2025-04-12 at 10 27 04" src="https://github.com/user-attachments/assets/a75cd70c-3059-464c-a00f-0d659b6bbbd2" />
+<img width="405" alt="Screenshot 2025-04-12 at 10 27 09" src="https://github.com/user-attachments/assets/b97c5fc0-913e-4a59-9c4b-0d1b391eb3f8" />
+<img width="405" alt="Screenshot 2025-04-12 at 10 27 12" src="https://github.com/user-attachments/assets/0d5eb3c2-c430-4801-8c57-18de727c85e8" />
+<img width="405" alt="Screenshot 2025-04-12 at 10 27 30" src="https://github.com/user-attachments/assets/ac581701-ba65-4a63-983f-fef4b81117d0" />
+<img width="405" alt="Screenshot 2025-04-12 at 10 27 18" src="https://github.com/user-attachments/assets/5962ec94-98b2-497f-90e0-283f3140707f" />
+<img width="405" alt="Screenshot 2025-04-12 at 10 27 21" src="https://github.com/user-attachments/assets/0d7b48ea-d5c6-48f3-a2a6-4efffd6497b5" />
 
 ---
 
