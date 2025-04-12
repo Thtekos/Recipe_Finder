@@ -3,8 +3,8 @@
     <string name="app_name">Εύρεση Συνταγών</string>
     <string name="recipe_details">Λεπτομέρειες Συνταγής</string>
     <string name="share_recipe">Κοινοποίηση Συνταγής</string>
-    <string name="flag_uk_description">Αγγλική σημαία</string>
-    <string name="flag_greece_description">Ελληνική σημαία</string>
+    <string name="flag_uk_description">Αγγλική γλώσσα</string>
+    <string name="flag_greece_description">Ελληνική γλώσσα</string>
     <string name="pasta">Μακαρόνια</string>
     <string name="delicious_italian_dish">Νόστιμο ιταλικό πιάτο</string>
     <string name="ingredients_flour_water_salt">Συστατικά: Αλεύρι, Νερό, Αλάτι</string>
@@ -20,5 +20,5 @@
     <string name="ingredients_carrots_potatoes_onions">Συστατικά: Καρότα, Πατάτες, Κρεμμύδια</string>
     <string name="instructions_boil_ingredients_and_blend">Οδηγίες: Βράστε τα συστατικά και ανακατέψτε.</string>
     <string name="toggle_dark_mode">Εναλλαγή Σκοτεινής Λειτουργίας</string>
-    <string name="dark_mode_toggle_description">Εναλλαγή σκοτεινής λειτουργίας</string>
+    <string name="dark_mode_toggle_description">Εναλλαγή σκοτεινού θέματος</string>
 </resources>
